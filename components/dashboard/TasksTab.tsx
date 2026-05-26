@@ -214,7 +214,7 @@ export function TasksTab({ tasks, projects, members, setTasks }: Props) {
                   <Calendar mode="single"
                     selected={form.dateline ? new Date(form.dateline) : undefined}
                     onSelect={(d) => { setForm({ ...form, dateline: d ? d.toISOString().split("T")[0] : "" }); setCalOpen(false); }}
-                    initialFocus />
+                  />
                 </PopoverContent>
               </Popover>
             </div>
