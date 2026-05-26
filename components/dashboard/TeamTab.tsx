@@ -173,7 +173,7 @@ export function TeamTab({ members, projects, setMembers }: Props) {
                   <Calendar mode="single"
                     selected={form.birthdate ? new Date(form.birthdate) : undefined}
                     onSelect={(d) => { setForm({ ...form, birthdate: d ? d.toISOString().split("T")[0] : "" }); setCalOpen(false); }}
-                    initialFocus />
+                  />
                 </PopoverContent>
               </Popover>
             </div>
